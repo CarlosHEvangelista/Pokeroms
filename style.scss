@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    height: 90px;
+}
+
+.Container {
+    background: linear-gradient(100deg, blue, red);
+    height: 500px;
+    width: 100vw;
+    color: white;
+
+    font-size: 26px;
+    
+    padding-top: 80px;
+    padding-left: 60px;
+
+    h1 {
+        width: 420px;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
