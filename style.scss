@@ -2,31 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
 nav {
-    background-color: black;
-    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    border: 1px solid black;
+
+    padding: 30px 70px;
+
+
+    .links {
+        display: flex;
+        gap: 140px;
+        
+        a {
+            color: black;
+        }
+    }
 }
 
-.Container {
-    background: linear-gradient(100deg, blue, red);
-    height: 500px;
-    width: 100vw;
-    color: white;
 
-    font-size: 26px;
-    
-    padding-top: 80px;
-    padding-left: 60px;
-
-    h1 {
-        width: 420px;
-    }
-
-    img {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
+.aboveTheFold {
+    background: linear-gradient(100deg, #00CBE6 50%, #FD5852 50%) ;
+    height: 70vh;
 }
