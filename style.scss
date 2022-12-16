@@ -27,25 +27,47 @@ nav {
 
 
 .aboveTheFold {
-    background: linear-gradient(100deg, #00CBE6 50%, #FD5852 50%) ;
+    background: linear-gradient(90deg, #00CBE6 50%, #FD5852 50%) ;
     height: 70vh;
 
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 70px;
+    padding-right: 10px;
 
+    text-align: center;
     color: white;
 
+
+    gap: 20px;
+
+
     h1 {
-        font-size: 56px;
+        font-size: 72px;
     }
 
-    button {
-        width: 210px;
-        height: 40px;
-        border: 0;
-        clip-path: polygon(10% 0, 90% 0, 95% 20%, 95% 80%, 90% 100%, 10% 100%, 5% 80%, 5% 20%);
+
+    .Image {
+        background-color: blueviolet;
+    }
+
+    img[src="Img/Charizard.png"] {
+        height: 70vh;
+        width: auto;
+        
+        position: absolute;
+        right: 0;
+        top: 90px;        
+    }
+
+    img[src="Img/Charizard-fire-red-cover.png"] {
+        height: 70vh;
+        width: auto;
+        
+        position: absolute;
+        left: 0;
+        top: 90px;        
+
     }
 }

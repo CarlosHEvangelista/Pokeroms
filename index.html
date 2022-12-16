@@ -25,14 +25,33 @@
     
     <main>
         <section class="aboveTheFold">
-            <h1>
-               Gotta install'em all
-            </h1>
-            <h2>
-                Install here all pokemon games <br> for your computer or phone.
-            </h2>
-            <button><a href="">Go to Roms</a></button>
+            <div class="Text">
+                <h1>
+                    Gotta install'em all
+                 </h1>
+                 <h2>
+                     Install here all pokemon games <br> for your computer or phone.
+                 </h2>
+            </div>
+        
+            <div class="Image">    
+                <img src="Img/Charizard.png" alt="">
+                <img src="Img/Charizard-fire-red-cover.png" alt="">
+            </div>
         </section>
     </main>
 </body>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+
+        Reveal = {
+            origin: 'left',
+            distance: '100%'
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            ScrollReveal().reveal('.Text, .Image', Reveal, {interval: 200})
+        })
+    </script>
 </html>
