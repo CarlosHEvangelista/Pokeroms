@@ -24,7 +24,7 @@
     </header>
     
     <main>
-        <section class="aboveTheFold">
+        <section id="aboveTheFold">
             <div class="Text">
                 <h1>
                     Gotta install'em all
@@ -34,24 +34,103 @@
                  </h2>
             </div>
         
-            <div class="Image">    
-                <img src="Img/Charizard.png" alt="">
+            <div class="Image">
                 <img src="Img/Charizard-fire-red-cover.png" alt="">
+
+                <img src="Img/Charizard.png" alt="">
             </div>
-        </section>
+          </section>
+
+          <section id="roms">
+              <h2>ROMS</h2>
+
+              <div class="roms">
+                <div class="GameboyRoms">
+                    <ul>
+                        <li><a href="">Red</a></li>
+                        <li><a href="">Blue</a></li>
+                        <li><a href="">Yellow</a></li>
+                        <li><a href="">Gold</a></li>
+                        <li><a href="">Silver</a></li>
+                        <li><a href="">Crystal</a></li>
+                        <li><a href="">Ruby</a></li>
+                        <li><a href="">Sapphire</a></li>
+                        <li><a href="">Emerald</a></li>
+                        <li><a href="">Fire Red</a></li>
+                        <li><a href="">Leaf Green</a></li>
+                </ul>
+                </div>
+    
+                <div class="NDSRoms">
+                    <ul>
+                        <li><a href="">Diamond</a></li>
+                        <li><a href="">Pearl</a></li>
+                        <li><a href="">Platinum</a></li>
+                        <li><a href="">Black</a></li>
+                        <li><a href="">White</a></li>
+                        <li><a href="">Black 2</a></li>
+                        <li><a href="">White 2</a></li>
+                        <li><a href="">Heart Gold</a></li>
+                        <li><a href="">Soul Silver</a></li>
+                </ul>
+                </div>
+                <div class="ThreeDSRoms">
+                    <ul>
+                        <li><a href="">X</a></li>
+                        <li><a href="">Y</a></li>
+                        <li><a href="">Omega Ruby</a></li>
+                        <li><a href="">Alpha Sapphire</a></li>
+                        <li><a href="">Sun</a></li>
+                        <li><a href="">Moon</a></li>
+                        <li><a href="">Ultra Sun</a></li>
+                        <li><a href="">Ultra Moon</a></li>
+                </ul>
+                </div>
+                <div class="SwitchRoms">
+                    <ul>
+                        <li><a href="">Let's go Pikachu</a></li>
+                        <li><a href="">Let's go Eevee</a></li>
+                        <li><a href="">Sword</a></li>
+                        <li><a href="">Shield</a></li>
+                        <li><a href="">Isle of Armor DLC</a></li>
+                        <li><a href="">Crown of Tundra DLC</a></li>
+                        <li><a href="">Brilliant Diamond</a></li>
+                        <li><a href="">Shinning Pearl</a></li>
+                        <li><a href="">Legends Arceus</a></li>
+                        <li><a href="">Scarlet</a></li>
+                        <li><a href="">Violet</a></li>
+                </ul>
+                </div>
+              </div>
+            
+          </section>
+
+          <section id="emuladors">
+            <h2>Emuladors</h2>
+                <div class="emuladors">
+                <div class="VisualboyAdvanced">
+                    <a href="">VisualboyAdvanced</a>
+                    <span>Gameboy Emulador</span>
+        
+                </div>
+                <div class="Desmume">
+                    <a href="">Desmume</a>
+                    <span>NDS Emulador</span>
+                </div>
+                <div class="Citra">
+                    <a href="">Citra</a>
+                    <span>3DS Emulador</span>
+                </div>
+                <div class="Yuzu">
+                    <a href="">Yuzu</a>
+                    <span>Switch Emulador</span>
+                </div>
+                </div>
+
+          </section>
     </main>
 </body>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
 
-        Reveal = {
-            origin: 'left',
-            distance: '100%'
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            ScrollReveal().reveal('.Text, .Image', Reveal, {interval: 200})
-        })
-    </script>
 </html>

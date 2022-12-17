@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: sans-serif;
+  list-style: none;
 }
 
 nav {
@@ -21,8 +22,8 @@ nav .links a {
   color: black;
 }
 
-.aboveTheFold {
-  background: linear-gradient(90deg, #00CBE6 50%, #FD5852 50%);
+#aboveTheFold {
+  background: linear-gradient(100deg, #00CBE6 50%, #FD5852 50%);
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -32,25 +33,135 @@ nav .links a {
   color: white;
   gap: 20px;
 }
-.aboveTheFold h1 {
+#aboveTheFold h1 {
   font-size: 72px;
 }
-.aboveTheFold .Image {
-  background-color: blueviolet;
-}
-.aboveTheFold img[src="Img/Charizard.png"] {
+#aboveTheFold img[src="Img/Charizard.png"] {
   height: 70vh;
   width: auto;
   position: absolute;
   right: 0;
   top: 90px;
 }
-.aboveTheFold img[src="Img/Charizard-fire-red-cover.png"] {
+#aboveTheFold img[src="Img/Charizard-fire-red-cover.png"] {
   height: 70vh;
   width: auto;
   position: absolute;
   left: 0;
   top: 90px;
+}
+
+#roms {
+  padding: 30px 50px;
+}
+#roms h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-size: 32px;
+}
+#roms .roms {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  gap: 70px;
+}
+#roms .roms div {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 24px;
+  padding: 15px 0;
+  box-shadow: 15px 10px 0 2px rgba(0, 0, 0, 0.274);
+}
+#roms .roms div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+#roms .roms div ul a {
+  color: black;
+  position: relative;
+}
+#roms .roms div ul a::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: width 0.4s;
+}
+#roms .roms div ul a:hover::after {
+  width: 100%;
+}
+#roms .roms .GameboyRoms,
+#roms .roms .NDSRoms {
+  background-color: #00CBE6;
+}
+#roms .roms .ThreeDSRoms,
+#roms .roms .SwitchRoms {
+  background-color: #FD5852;
+}
+
+#emuladors {
+  padding: 30px 50px;
+}
+#emuladors h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-size: 32px;
+}
+#emuladors .emuladors {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  gap: 70px;
+}
+#emuladors .emuladors div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 240px;
+  gap: 20px;
+  border-radius: 25px;
+  padding-top: 80px;
+}
+#emuladors .emuladors div a {
+  font-size: 24px;
+  color: black;
+  position: relative;
+}
+#emuladors .emuladors div a::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: width 0.4s;
+}
+#emuladors .emuladors div a:hover::after {
+  width: 100%;
+}
+#emuladors .emuladors div span {
+  color: rgba(255, 255, 255, 0.856);
+}
+#emuladors .emuladors div button {
+  width: 140px;
+  height: 40px;
+  font-size: 24px;
+}
+#emuladors .emuladors .VisualboyAdvanced,
+#emuladors .emuladors .Desmume {
+  background-color: #00CBE6;
+}
+#emuladors .emuladors .Citra,
+#emuladors .emuladors .Yuzu {
+  background-color: #FD5852;
 }
 
 /*# sourceMappingURL=style.css.map */
